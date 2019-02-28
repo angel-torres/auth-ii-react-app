@@ -33,7 +33,6 @@
 }
 
 .container {
-  border: 2px solid red;
   width: 400px;
   margin: 0 auto;
 }
@@ -44,4 +43,9 @@
   height: 400px;
   align-items: center;
   justify-content: center;
+}
+
+.navlink {
+  padding: 20px 40px;
+  font-size: 30px;
 }
