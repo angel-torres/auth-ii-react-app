@@ -31,3 +31,17 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  border: 2px solid red;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+}
