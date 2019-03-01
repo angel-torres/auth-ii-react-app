@@ -21,10 +21,20 @@ class Users extends Component {
         .catch(err => console.log(err))
     }
 
+    logout = e => {
+        e.preventDefault();
+        this.props.history.push('/login')
+        localStorage.removeItem('token');
+        this.setState({
+            users: []
+        })
+    }
+
     render() {
         return (
         <div>
             <button onClick={this.getUsers} className="waves-effect waves-light btn">Get Users</button>
+            <button onClick={this.logout} className="waves-effect waves-light btn">Logout</button>
             {this.state.users.map( user => <h2>{user.username}</h2>)}
         </div>
         )
